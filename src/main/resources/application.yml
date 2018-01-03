@@ -1,0 +1,21 @@
+server:
+  port: 8080
+spring:
+  thymeleaf:
+    cache: false
+  jpa:
+    generate-ddl: false
+    show-sql: true
+    database: mysql
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: jdbc:mysql://localhost:3333/zh
+    password: 709717196
+    username: root
+    driver-class-name: com.mysql.jdbc.Driver
+logging:
+  level: info
+info:
+  app:
+    name: @project.artifactId@
